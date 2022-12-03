@@ -7,13 +7,13 @@ rm -rf /etc/slowdns
 mkdir -m 777 /etc/slowdns
 nameserver=$(cat /etc/nsdomain)
 # SSH SlowDNS
-wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/sshd_config
+wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/romi04199/Mantap/main/sshd_config
 systemctl restart sshd
 #
-wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server.key"
-wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server.pub"
-wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/sldns-server"
-wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/sldns-client"
+wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/romi041999/SLDNS/main/slowdns/server.key"
+wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/romi041999/SLDNS/main/slowdns/server.pub"
+wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/romi041999/SLDNS/main/slowdns/sldns-server"
+wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/romi041999/SLDNS/main/slowdns/sldns-client"
 #
 chmod +x /etc/slowdns/server.key
 chmod +x /etc/slowdns/server.pub
